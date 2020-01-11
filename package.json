@@ -1,0 +1,14 @@
+{
+  "name": "nicework",
+  "version": "1.0.0",
+  "description": "its my third project and its gona be cool",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "Rawand",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
