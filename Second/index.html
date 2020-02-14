@@ -1,208 +1,411 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>2'nd Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="../1'stProject/css/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu|PT+Sans|Noto+Sans+TC|Roboto+Slab|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
+    <title>Restaurant</title>
   </head>
-  <div class="UP">
-    <a href="#title">
-      <i class="fas fa-arrow-circle-up fa-3x"></i>
-    </a>
-  </div>
   <body>
 
-    <section id="title">
-      <div class="container-fluid">
+    <div class="navigation">
 
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <a class="navbar-brand" href="#">Rawand</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#Iconakan">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">download</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <input type="checkbox" class="navigation__input" id="nav-bar">
 
+      <label for="nav-bar" class="navigation__button">
+        <span class="navigation__icon">
+          &nbsp;
+        </span>
 
-        <!-- Title -->
+      </label>
 
-        <div class="row">
-          <div class="col-lg-6 Titles">
-            <h1 class="hellomy">Hello Welocme to My web development web project.</h1>
-            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Download</button>
-            <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
-          </div><br>
-          <div class="col-lg-6">
-            <img class="Title-img" src="images/download.png" alt="WebIMG">
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="navigation__background">&nbsp;</div>
 
+      <div class="navigation__nav">
 
-    <!-- Features -->
-    <section id="features">
-      <div class="row">
-        <div class="feature-box col-md-4">
-          <i class="fas fa-check-circle fa-4x"></i>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, everyone can do it.</p>
-        </div>
-        <div class="feature-box col-md-4 ">
-          <i class="fas fa-bullseye fa-4x"></i>
-          <h3>Solve Problems</h3>
-          <p>We have all problem,You can solve it here.</p>
-        </div>
-        <div class="feature-box col-md-4">
-          <i class="fas fa-heart fa-4x"></i>
-          <h3>We are all work</h3>
-          <p>Everyone can send questions to here and everyone can help others.</p>
-        </div>
-      </div>
-    </section>
+        <ul class="navigation__list">
 
-
-    <!-- Testimonials -->
-    <section class="Testimonials">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="7000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h2>Hello Im Rawand and i student in university of sulaimanyah</h2>
-            <img src="images/Rawand.jpg" alt="My-Picture">
-            <em>Rawand, Chwarta</em>
-          </div>
-          <div class="carousel-item">
-            <h2>I no Longer have to angry with my problems, i found best place to solve them.</h2>
-            <img src="images/Bestwn.jpg" alt="BestwnPic">
-            <em>Bestwn, Takya</em>
-          </div>
-          <div class="carousel-item">
-            <h2>Hello Im Ravyar and i think its best place to solve  my problems. </h2>
-            <img src="images/Ravyar.jpg" alt="RavyarPic">
-            <em>Ravyar, sulaimanyah</em>
-          </div>
-          <div class="carousel-item">
-            <h2>Hello Im Zhyar and i trying to helping my friends.</h2>
-            <img src="images/Zhyar.jpg" alt="ZhyarPic">
-            <em>Zhyar, sulaimanyah</em>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-
-
-
-    <!-- Press -->
-    <section id="press">
-      <img src="images/Rawand.jpg" alt="Rawand-Pic">
-      <img src="images/Bestwn.jpg" alt="Bestwn-Pic">
-      <img src="images/Ravyar.jpg" alt="Ravyar-Pic">
-      <img src="images/Zhyar.jpg" alt="Zhyar-Pic">
-    </section>
-
-
-    <!-- Pricing -->
-    <section id="price">
-      <div class="Second-Title">
-        <h2>A plan for every Student's need</h2>
-        <p>Simple and affordable price plans for your and your problems.</p>
+          <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">welcome</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">hich</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">help</a></li>
+        
+        </ul>
       </div>
 
-      <div class="row">
-        <div class="price-column col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>College Students</h3>
-            </div>
-            <div class="card-body">
-              <h2 class="priceOfItems">Free</h2>
-              <p>1 question per day</p>
-              <p>5 Messages per day</p>
-              <p>Unlimited app usage</p>
-              <button class="btn btn-outline-dark" type="button"> Sign Up</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="price-column col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>Pro-Use</h3>
-            </div>
-            <div class="card-body">
-              <h2 class="priceOfItems">49.99$</h2>
-              <p>5 question per daay</p>
-              <p>20 messages per day</p>
-              <p>Unlimited app usage</p>
-              <button class="btn btn-dark" type="button"> Sign Up</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="price-column col-lg-4">
-          <div class="card ">
-            <div class="card-header">
-              <h3>Premium</h3>
-            </div>
-            <div class="card-body">
-              <h2 class="priceOfItems">99.99$</h2>
-              <p>Unlimited Questions</p>
-              <p>Unlimited Messages</p>
-              <p>Unlimited app usage</p>
-              <button class="btn btn-dark" type="button"> Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Final Part -->
-    <section id="final">
-      <div class="finalbtn">
-        <h1>You can find best answers in this website to your questions.</h1>
-        <button class="btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
-        <button class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
-      </div>
-    </section>
-
-    <div id="Iconakan">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-      <p class="CopyRight">COPYRIGHTS © 2019 <a class="aInsideP" href="#">Rawand Rebwar</a>.</p>
     </div>
 
+    <header class="header">
+      <div class="header__logo">
+        <img srcset="images/logo.png 1x , images/logo.png 2x" alt="logo" class="header__logo-img">
+      </div>
+
+      <div class="header__headerText">
+          <h1 class="header-text">
+            <span class="header-text--main">Good food</span>
+            <span class="header-text--sub">ends with good talk.</span>
+          </h1>
+
+          <a href="#section-cards" class="btn btn--white btn--one">watch our foods</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+
+        <div class="u-text-center">
+          <h2 class="heading-secondary u-margin-bottom-veryhuge">
+            Advicing for people to eat healthy
+          </h2>
+        </div>
+
+        <div class="grid-control">
+          <div class="row justify-content-center">
+            <div class="col-md-5 ">
+  
+               <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with food</h3>    
+               <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad.</p>            
+  
+  
+               <h3 class="heading-tertiary u-margin-bottom-small">Life adventures like never have before</h3>
+               <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum nemo quod itaque.</p>         
+  
+               <a href="#" class="btn-text">Learn More &rarr;</a>
+            </div>
+  
+            <div class="col-md-6">
+               <div class="mainPic">
+                 <img src="images/food-1.jpg" alt="pic-1" class="mainPic__photo mainPic__photo--p1">
+                 <img src="images/food-2.jpg" alt="pic-2" class="mainPic__photo mainPic__photo--p2">
+                 <img src="images/food-3.jpg" alt="pic-3" class="mainPic__photo mainPic__photo--p3">
+               </div>   
+            </div>
+          </div>  
+        </div>
+
+      </section>
+
+      <section class="section-features">
+
+        <div class="row feature-row">
+          <div class="col-lg-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fas fa-globe"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
+              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fas fa-compass"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
+              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fas fa-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
+              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fas fa-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
+              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
+            </div>
+          </div>
+      </section>
+      
+      <section class="section-cards" id="section-cards">
+
+        <div class="u-text-center">
+          <h2 class="heading-secondary u-margin-bottom-big">
+            Advicing for people to eat healthy
+          </h2>
+        </div>
+        
+        <div class="row justify-content-around">
+          <div class="col-md-4 res">
+            <div class="card">
+
+                <div class="card__side card__side--front card__side--front-c1 ">
+
+                  <div class="card__photo card__photo--p1">
+                    &nbsp;
+                  </div>
+
+                  <h4 class="card__heading">
+                    <span class="card__heading--span card__heading--span--1">Delicious food</span>
+                  </h4>
+
+                  <div class="card__details">
+                    <ul>
+                      <li>Tomato</li>
+                      <li>Nice chesse</li>
+                      <li>Meat</li>
+                      <li>Souce</li>
+                      <li>too Delecious</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="card__side card__side--back card__side--back-c1">
+                  <div class="card__backside">
+
+                    <div class="card__price-box">
+
+                      <p class="card__price-only">only</p>
+                      <p class="card__price-value">10 000 IQD</p>
+                    
+                    </div>
+
+                    <a href="#popup" class="btn btn--white">Buy now</a>
+                  </div>  
+                </div>
+              </div>
+          </div>
+            
+          <div class="col-md-4 res">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front-c2 ">
+                <div class="card__photo card__photo--p2">         
+                    &nbsp;
+                </div>    
+                <h4 class="card__heading">
+                  <span class="card__heading--span card__heading--span--2">Delicious food</span>
+                </h4>
+
+                <div class="card__details">
+                  <ul>
+                    <li>Tomato</li>
+                    <li>Nice chesse</li>
+                    <li>Meat</li>
+                    <li>Souce</li>
+                    <li>too Delecious</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-c2">
+                <div class="card__backside">
+
+                  <div class="card__price-box">
+
+                    <p class="card__price-only">only</p>
+                    <p class="card__price-value">10 000 IQD</p>
+                  
+                  </div>
+
+                  <a href="#popup" class="btn btn--white">Buy now</a>
+                </div>  
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 res">
+            <div class="card">
+
+                <div class="card__side card__side--front card__side--front-c3 ">
+
+                  <div class="card__photo card__photo--p3">
+                    &nbsp;
+                  </div>
+
+                  <h4 class="card__heading">
+                    <span class="card__heading--span card__heading--span--3">Delicious food</span>
+                  </h4>
+
+                  <div class="card__details">
+                    <ul>
+                      <li>Tomato</li>
+                      <li>beauty chesse</li>
+                      <li>Meat</li>
+                      <li>Souce</li>
+                      <li>too Delecious</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="card__side card__side--back card__side--back-c3">
+                  <div class="card__backside">
+
+                    <div class="card__price-box">
+
+                      <p class="card__price-only">only</p>
+                      <p class="card__price-value">10 000 IQD</p>
+                    
+                    </div>
+
+                    <a href="#popup" class="btn btn--white">Buy now</a>
+                  </div>  
+                </div>
+              </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn--gold btn-huge-margin btnCards">Go to menu</a>      
+      </section>
+
+      <section class="section-stories">
+          <div class="bg-video">
+            <video class="bg-video__content" autoplay loop muted>
+              <source src="images/video.mp4" type="video/mp4">
+                Sorry your browser not support background video
+            </video>
+          </div>
+
+          <div class="u-text-center">
+            <h2 class="heading-secondary u-margin-bottom-big u-padd">
+              we make people eat very good
+            </h2>
+          </div>
+          
+          <div class="stories">
+            <figure class="stories__shape">
+              <img src="images/fasolia.jpg" alt="Stories Comment" class="stories__img">
+              <figcaption class="stories__caption">mr rawand</figcaption>
+            </figure>
+            <div class="stories__text">
+              <h3 class="heading-tertiary u-margin-bottom-small u-transform-left">i had best meal ever </h3> 
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad.mollitia reiciendis inventore illum veniam ad.
+              </p>            
+            </div>
+          </div>
+
+          <div class="stories">
+            <figure class="stories__shape">
+              <img src="images/fasolia.jpg" alt="Stories Comment" class="stories__img">
+              <figcaption class="stories__caption">mr rawand</figcaption>
+            </figure>
+            <div class="stories__text">
+              <h3 class="heading-tertiary u-margin-bottom-small u-transform-left">i had best meal ever </h3> 
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad.mollitia reiciendis inventore illum veniam ad.
+              </p>            
+            </div>
+          </div>
+          <a href="https://www.google.com" class="btn-text u-position-center">Learn More &rarr;</a>
+      </section>
+
+      <section class="section-book">
+        <div class="container">
+          <div class="book">
+
+
+            <div class="book__form">
+
+              <form action="#" class="form">
+                
+                <h2 class="heading-secondary u-margin-bottom-big book__h2">
+                  start booking now!
+                </h2>
+    
+                <div class="form__group">
+                  <input type="text" class="form__input" id="Full_Name" placeholder="Full Name" required>
+                  <label for="Full_Name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input type="email" class="form__input" id="email" placeholder="Email ID" required>
+                  <label for="email" class="form__label">Email ID</label>
+                </div>
+                
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input type="radio" id="small" class="form__radio-input" name="btn">
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small button
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input type="radio" id="large" class="form__radio-input" name="btn"> 
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large button
+                    </label>
+                  </div>
+
+                  <div class="u-padding">
+                    <button class="btn btn--gold ">Next Step</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+      
+      <footer class="footer">
+        <div class="u-text-center">
+          <img src="images/logo.png" alt="Logo" class="footer__logo">
+        </div>
+        <div class="footer__information">
+
+          <div class="row footer__columns">
+            <div class="col-lg-5 footer__navigation">
+
+              <ul class="footer__navigation--ul">
+
+                <li class="footer__navigation--items">Company</li>
+                <li class="footer__navigation--items">contactus</li>
+                <li class="footer__navigation--items">carrers</li>
+                <li class="footer__navigation--items">privacy polici</li>
+                <li class="footer__navigation--items">terms</li>
+
+              </ul>
+            </div>
+
+            <div class="col-lg-5 footer__info">
+              <h5>Lorem <span class="important">ipsum</span> dolor sit amet consectetur adipisicing elit. Porro distinctio, laborum <span class="important">soluta tenetur</span>, nesciunt repellat corporis ea,
+                 modi illo mollitia hic odit quae placeat perspiciatis aut dolores vitae velit quasi?
+              </h5>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+      <div class="popup" id="popup">
+
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="images/food-1.jpg" alt="Popup image" class="popup__img">
+            <img src="images/food-2.jpg" alt="Popup image" class="popup__img">
+          </div>
+          <div class="popup__right">
+            <a href="#section-cards" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-medium marg-res">Starting booking now</h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">Important : read this too good</h3>
+              <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Magna ac placerat vestibulum lectus mauris. Varius vel pharetra vel turpis nunc eget lorem dolor. Consequat interdum varius sit amet mattis. Eget egestas purus viverra accumsan in. Est ultricies integer quis auctor. Proin nibh nisl condimentum id venenatis. Quis lectus nulla at volutpat diam ut venenatis tellus. Cum sociis natoque penatibus et magnis dis. Vitae nunc sed velit dignissim sodales ut eu sem integer. Senectus et netus et malesuada fames ac turpis egestas maecenas. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices.
+              </p>
+
+              <a href="#" class="btn btn--gold u-margin-top-medium popBtnRes">book now</a>
+
+          </div>
+
+        </div>
+      </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
