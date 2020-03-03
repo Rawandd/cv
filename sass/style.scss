@@ -1,17 +1,3 @@
-@import "abstract/function.scss";
-@import "abstract/mixin.scss";
-@import "abstract/variable.scss";
-
-@import "base/base.scss" ;
-@import "base/anymation.scss";
-@import "base/typography.scss";
-@import "base/utilities.scss";
-
-@import "layout/header.scss";
-
-@import "components/button.scss";
-@import "components/mainPic.scss";
-@import "components/features.scss";
-
-
-@import "pages/home.scss"
+@import "base.scss";
+@import "layout.scss";
+@import "component.scss";

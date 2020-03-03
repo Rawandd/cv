@@ -195,19 +195,14 @@ body {
     position: relative; }
   .navbar__user:hover .table {
     opacity: 1;
-    transform: translateY(-5.5rem); }
+    transform: translateY(-5rem); }
   .navbar .table {
     position: absolute;
     opacity: 0;
     transition: all .2s;
-    color: white;
-    background-color: var(--grey-dark);
-    padding: .5rem 2rem;
-    border-radius: .4rem; }
+    color: white; }
     .navbar .table td:not(:last-of-type) {
       padding-right: 1rem; }
-    .navbar .table th {
-      border-bottom: 1px solid white; }
 
 .sidebar {
   font-size: 1.4rem;

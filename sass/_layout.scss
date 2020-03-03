@@ -1,0 +1,94 @@
+.container{
+    margin: 8rem auto;
+    background-color: #fff;
+    max-width: 120rem;
+    box-shadow: 0rem 1rem 6rem rgba(#000000, .6);
+    min-height: 73rem;
+
+    @include respond (tab-land){
+        margin: 0;
+    }
+}
+
+.header{
+    font-size: 1.4rem;
+    height: 7rem;
+    border-bottom: 1px solid var(--grey-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond (phone){
+        height: 12rem;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+}
+
+
+.content{
+    display: flex; 
+
+    @include respond (phone){
+        flex-direction: column;
+    }
+
+    &__navbar{
+        display: inherit;
+        flex: 0 0 18%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
+
+.details{
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--grey-light);
+
+    @include respond (tab-port){
+        padding: 3rem;
+    }
+
+    @include respond (phone){
+        flex-direction: column;
+    }
+}
+.description{
+    background-color: #fff;
+    flex: 0 0 60%;
+    padding: 3rem;
+    box-shadow: 0 .3rem 1.3rem rgba(0,0,0,.6);
+    margin-right: 4.5rem;
+
+    @include respond (tab-port){
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @include respond (phone){
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+}
+.user-reviews{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    padding: 3rem 0; 
+    text-align: center;
+    position: relative;
+
+    @include respond (tab-port){
+        padding: 2rem 0;
+    }
+}

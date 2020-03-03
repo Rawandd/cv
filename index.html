@@ -1,106 +1,256 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" size="192/192" href="images/android-icon-192x192.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" alt="Trilo Logo" class="logo">
+            
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search for hotel">
 
-    <title>Restaurant</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="images/logo.png" alt="logo" class="header__logo-img">
-      </div>
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>            
+            
+            <nav class="navbar">
+                <div class="navbar__iconBox">
+                    <svg class="navbar__photo">
+                        <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="navbar__notification">13</span>
+                </div>
 
-      <div class="header__headerText">
-          <h1 class="header-text">
-            <span class="header-text--main">Good food</span>
-            <span class="header-text--sub">ends with good talk.</span>
-          </h1>
+                <div class="navbar__iconBox">
+                    <svg class="navbar__photo">
+                        <use xlink:href="images/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="navbar__notification">7</span>
+                </div>
 
-          <a href="#" class="btn btn--white btn--one">watch our foods</a>
-      </div>
-    </header>
+                <div class="navbar__user">
+                    <table class="table">
+                        <tr>
+                          <th>
+                            NAME
+                          </th>
+                          <th>
+                            AGE
+                          </th>
+                        </tr>
+                        <tr>
+                          <td>
+                            Rawand
+                          </td>
+                          <td>
+                            20 Years
+                          </td>
+                        </tr>
+                      </table>
+                  
+                    <img src="images/Rawand.jpg" alt="UserPic" class="navbar__user-photo">
+                    <span class="navbar__user-id">Rawand</span>
+                </div>
 
-    <main>
-      <section class="section-about">
+            </nav>
 
-        <div class="u-text-center">
-          <h2 class="heading-secondary u-margin-bottom-big">
-            Advicing for people to eat healthy
-          </h2>
+        </header>
+        <div class="content">
+            <div class="content__navbar">
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="side"></span>
+                            <svg class="sidebar__icon">
+                                <use xlink:href="images/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>hotel</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="images/sprite.svg#icon-aircraft"></use>
+                            </svg>
+                            <span>flight</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="images/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>car rental</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <svg class="sidebar__icon">
+                                <use xlink:href="images/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>tours</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyrights">
+                    <p class="legal">&copy; 2020 by <a href="https://www.facebook.com/rawand.rebwar.794" target="_blank" class="design">Rawand</a>. all right reserved</p>
+                </div>
+            </div>
+
+            <main class="hotel-overview">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="images/hotel-1.jpg" alt="Hotel photo 1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/hotel-2.jpg" alt="Hotel photo 2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/hotel-3.jpg" alt="Hotel photo 3" class="gallery__photo">
+                    </figure>    
+                </div>
+
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Las Palmas Hotel
+                    </h1>
+
+                    <div class="overview__stars">
+                        <svg class="overview__icon--stars">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon--stars">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon--stars">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon--stars">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon--stars">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+
+                    <div class="overview__location">
+                        <svg class="overview__icon--location">
+                            <use xlink:href="images/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">
+                            Albufeira, Portugal
+                        </button>
+                    </div>
+
+                    <div class="overview__rating">
+                        <div class="overview__rating--average">4.6</div>
+                        <div class="overview__rating--count">874 votes</div>
+                    </div>
+                </div>
+
+                <div class="details">
+                    <div class="description">
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorum id consectetur alias natus ipsa laboriosam aspernatur,
+                            eos tempore perspiciatis architecto fugit hic voluptatem distinctio quas nobis repudiandae inventore quod!
+                        </p>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ex atque perferendis fugit libero cum consequatur recusandae quae culpa repellendus? 
+                        </p>
+
+                        <ul class="list">
+                            <li class="list__item">Close tho the beach</li>
+                            <li class="list__item">Free wifi to all the rooms</li>
+                            <li class="list__item">Breakfast included</li>
+                            <li class="list__item">Free airport shuttle</li>
+                            <li class="list__item">Air conditioning and heating</li>
+                            <li class="list__item">Pets Allowed</li>
+                            <li class="list__item">We speak all languages</li>
+                            <li class="list__item">Perfect for families</li>
+                        </ul>
+
+                        <div class="recomend">
+                            <p class="recomend__count">
+                                Lucy and 3 others friends recomend this hotel.
+                            </p>
+                            <div class="recomend__friends">
+                                <img src="images/Bestwn.jpg" alt="Photo 1" class="recomend__photo">
+                                <img src="images/Ravyar.jpg" alt="Photo 2" class="recomend__photo">
+                                <img src="images/Rawand.jpg" alt="Photo 3" class="recomend__photo">
+                                <img src="images/Zhyar.jpg" alt="Photo 4" class="recomend__photo">
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <figure class="user-reviews">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam voluptatibus quibusdam molestias quae, 
+                                fugiat optio nisi architecto atque modi.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="images/Rawand.jpg" alt="Profile Pic" class="review__photo">
+                                <div class="review__user--box">
+                                    <p class="review__user--name">Rawand Rebwar</p>
+                                    <p class="review__user--date">Feb 22nd, 2020</p>
+                                </div>
+                                <p class="review__rating">8.3</p>
+                            </figcaption>
+                        </figure>   
+
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quam voluptatibus quibusdam molestias quae, 
+                                fugiat optio nisi architecto atque modi.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="images/Ravyar.jpg" alt="Profile Pic" class="review__photo">
+                                <div class="review__user--box">
+                                    <p class="review__user--name">Ravyar Adl</p>
+                                    <p class="review__user--date">Aug 8th, 2019</p>
+                                </div>
+                                <p class="review__rating">8.9</p>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-inline">Show More <span>&rarr;</span></button>
+                    </figure>
+                    
+                </div>
+                <footer class="footer">
+                    <div class="booking">
+                        <h2 class="booking__text">Good news we have 4 free rooms for your selected dates!</h2>
+    
+                        <button class="btn">
+                            <span class="btn__visible">Book Now</span>
+                            <span class="btn__invisible">Only 4 rooms Left</span>
+                        </button>
+
+                        <div class="mob-copyright">
+                            <p class="legal">&copy; 2020 by 
+                                <a href="https://www.facebook.com/rawand.rebwar.794" target="_blank" class="design">
+                                    Rawand
+                                </a>. all right reserved
+                            </p>
+                        </div>
+
+                    </div>
+                </footer>
+    
+            </main>
         </div>
-
-        <div class="grid-control">
-          <div class="row justify-content-center">
-            <div class="col-md-5 ">
-  
-               <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with food</h3>    
-               <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit suscipit facilis quod necessitatibus mollitia reiciendis inventore illum veniam ad.</p>            
-  
-  
-               <h3 class="heading-tertiary u-margin-bottom-small">Life adventures like never have before</h3>
-               <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum nemo quod itaque.</p>         
-  
-               <a href="#" class="btn-text">Learn More &rarr;</a>
-            </div>
-  
-            <div class="col-md-6">
-               <div class="mainPic">
-                 <img src="images/food-1.jpg" alt="pic-1" class="mainPic__photo mainPic__photo--p1">
-                 <img src="images/food-2.jpg" alt="pic-2" class="mainPic__photo mainPic__photo--p2">
-                 <img src="images/food-3.jpg" alt="pic-3" class="mainPic__photo mainPic__photo--p3">
-               </div>   
-            </div>
-          </div>  
-        </div>
-
-      </section>
-
-      <section class="section-features">
-
-        <div class="row feature-row">
-          <div class="col-lg-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fas fa-globe"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
-              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fas fa-compass"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
-              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fas fa-map"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
-              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fas fa-heart"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small"> Explore The World</h3>
-              <p class="feature-box__text"> Lorem Hello brother ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam rerum ipsum</p>  
-            </div>
-          </div>
-
-        </div>
-      </section>
-    </main>
-
-  </body>
+    </div>
+</body>
 </html>
