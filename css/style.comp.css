@@ -1,13 +1,14 @@
-::selection {
-  background-image: linear-gradient(to right top, var(--primary-light), var(--primary-dark));
-  color: white; }
-
 :root {
   --primary: #5588a3;
   --primary-light: #7189bf;
   --primary-dark: #32407b;
   --grey-dark: #bbbbbb;
   --grey-light: #f2f6f5; }
+
+::selection {
+  background-color: var(--primary);
+  color: white; }
+
 
 * {
   padding: 0;
