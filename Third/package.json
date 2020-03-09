@@ -1,0 +1,29 @@
+{
+  "name": "Decorate",
+  "version": "1.0.0",
+  "description": "Decor Project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/style.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "node-sass sass/style.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -c \"last 2 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed", 
+    "build:css": "npm-run-all compile:sass prefix:css compress:css start"
+  },
+  "author": "Rawand",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "autoprefixer-core": "^6.0.1",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "funding": "^1.0.9",
+    "postcss": "^7.0.26"
+  }
+}
