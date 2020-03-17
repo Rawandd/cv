@@ -11,14 +11,23 @@ let HEAL_VALUE = 20;
 let choosenMaxLife;
 
 function chooseHealth() {
+
   const choosenMaxHealth = prompt("بڕی خوێنی هەردوکتان دیاری بکە", '100');
-  choosenMaxLife = choosenMaxHealth;
-  if (isNaN(choosenMaxHealth) || choosenMaxHealth <= 0) {
-    choosenMaxLife = 100;
+  const enteredValue = parseInt(choosenMaxHealth);
+  if (isNaN(enteredValue) || enteredValue <= 0) {
+    throw { message: 'ئینپوتێکی هەلەت داخڵ کردوە، ئێمە 100 مان بۆ هەڵبژاردیت'};
   }
+  return enteredValue;
 }
 
-chooseHealth();
+try{
+  choosenMaxLife = chooseHealth();
+}catch(err) {
+  choosenMaxLife = 100;
+  console.log(err);
+  alert('You entered wrong number, and we make your health to 100')
+}
+
 adjustHealths(choosenMaxLife);
 
 let currentMonsterHealth = choosenMaxLife;
@@ -159,7 +168,11 @@ function healPlayerHandler() {
 }
 
 function logHandler (){
-  console.log(battelLog);
+  for (const i of battelLog) {
+    for (const key in i) {
+      console.log(`${key} => ${i[key]}`);
+    }
+  }
 }
 
 AttackBtn.addEventListener('click', attack);
