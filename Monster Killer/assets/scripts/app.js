@@ -15,7 +15,7 @@ function chooseHealth() {
   const choosenMaxHealth = prompt("بڕی خوێنی هەردوکتان دیاری بکە", '100');
   const enteredValue = parseInt(choosenMaxHealth);
   if (isNaN(enteredValue) || enteredValue <= 0) {
-    throw { message: 'You Entered Worng Input'};
+    throw { message: 'You entered Wrong input Please cheack it again'};
   }
   return enteredValue;
 }
@@ -25,7 +25,7 @@ try{
 }catch(err) {
   choosenMaxLife = 100;
   console.log(err);
-  alert('ئینپوتێکی هەلەت داخڵ کردوە، ئێمە 100 مان بۆ هەڵبژاردیت')
+  alert('ئینپوتەکەت هەڵەیە، ئێمە ١٠٠ مان بۆ دیاری کردیت')
 }
 
 adjustHealths(choosenMaxLife);
