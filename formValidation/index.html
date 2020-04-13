@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="signUp-Form" id="signup-Form">
+      <form class="form" id="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username"> Username </label>
+          <input type="text" id="username" placeholder="Enter Username" name="H" />
+          <small>Username Required</small>
+        </div>
+        <div class="form-control">
+          <label for="email"> Email </label>
+          <input type="text" id="email" placeholder="Enter Email" name="H"/>
+          <small>Email Required</small>
+        </div>
+        <div class="form-control">
+          <label for="password"> Password </label>
+          <input type="password" id="password" placeholder="Enter Password" />
+          <small>Password Required</small>
+        </div>
+        <div class="form-control">
+          <label for="confirm"> Confirm Password </label>
+          <input type="password" id="confirm" placeholder="Your Password" />
+          <small>Confirm Password is Required</small>
+        </div>
+        <button>Submit</button>
+      </form>
+      <div class="signupButton" id="signupButton">
+        <a href="#" class="signupBtn">sign Up</a>
+      </div>
+    </div>
+
+    <div class="right-Hand" id="signin-Form">
+      <form class="login-Form">
+        <h2>Login Here</h2>
+        <div class="form-control">
+          <label for="username2"> Username </label>
+          <input type="text" id="username2" placeholder="Enter Username" />
+        </div>
+        <div class="form-control">
+          <label for="password2"> Password </label>
+          <input type="password" id="password2" placeholder="Enter Password" />
+        </div>
+        <button>Login</button>
+      </form>
+      <div class="signinButton" id="signinButton">
+        <a href="#" class="signinBtn">sign in</a>
+      </div>
+    </div>
+  </body>
+</html>

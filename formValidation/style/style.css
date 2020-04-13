@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+
+:root {
+  --succes-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafb;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signUp-Form {
+  background-color:#dadddf;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: block;
+  position: relative;
+}
+
+.active {
+  transition: all 0.4s;
+  width: 75% !important;
+}
+
+.signUp-Form h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.form {
+  margin: 1rem 0;
+  padding: 3rem 2rem;
+  height: -webkit-fill-available;
+  width: 60%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+.form-control {
+  padding-bottom: 1.6rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.form input {
+  display: block;
+  padding: 7px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.form-control.success input {
+  border-color: var(--succes-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form input:focus {
+  outline: 0;
+  border: none;
+  border: 2px solid #777;
+}
+.form-control small {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.form-control.error small {
+  color: var(--error-color);
+  visibility: visible;
+}
+
+.form button {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border: 2px solid #3498db;
+  background-color: #3498db;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form button:active {
+  outline: none;
+}
+
+/* // LOGIN  FORM */
+.right-Hand {
+  background-color:rgba(242, 244, 251, 1);
+  width: 50%;
+  min-height: 100vh;
+  position: relative;
+  color: #5b5656;
+  border-radius: 10px;
+}
+
+.right-Hand .login-Form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-Form {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  border-radius: 5px;
+}
+
+.login-Form h2 {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.login-Form label {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.login-Form input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-Form button {
+  background-color: #21bf73;
+  border: none;
+  padding: 10px;
+  margin-bottom: 2rem;
+  width: 78%;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-Form input:focus {
+  outline: none;
+}
+
+/* BUTTONS TO SHOW FORM */
+.signupButton,
+.signinButton {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupButton:hover .signupBtn {
+  animation: animate 2s infinite forwards;
+}
+.signinButton:hover .signinBtn {
+  animation: animate 2s infinite forwards;
+}
+
+.signupBtn,
+.signinBtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 20px;
+  transition: width 0.4s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .signUp-Form,
+  .right-Hand {
+    width: 100%;
+  }
+  .active,
+  .deactive {
+    width: 100% !important;
+  }
+  .form,
+  .login-Form {
+    width: 100%;
+  }
+}
