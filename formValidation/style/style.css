@@ -26,7 +26,7 @@ body {
   background-color:#dadddf;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
-  height: 100vh;
+  min-height: 100vh;
   width: 50%;
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ body {
 .signupButton,
 .signinButton {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: absolute;
   top: 50%;
