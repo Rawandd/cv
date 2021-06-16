@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "funding": "^1.0.9",
-    "postcss": "^7.0.26"
+    "postcss": "^7.0.36"
   }
 }
